@@ -6,7 +6,7 @@ body {
 
 		.aboveLine{
 			color : white;
-			padding-top : 10vh;
+			padding-top : 20vh;
 			padding-left : 30vh;
 			font-family: 'Poiret One', cursive;
 			margin-bottom : 0;
@@ -40,19 +40,11 @@ body {
 		ul{
 			text-align: center;
 		}
-		.phrase li{
-			padding: 0 1em 0 0.8em;
-			color: white;
-			text-decoration: none;
-			font-family: 'Poiret One', cursive;
-			display: inline-block;
-			font-size: 2em;
-			font-weight: bold;
-		}
-
+		
 		.row div:hover{
 			background-color: #16a085; 
 			color: white;
+			font-size: 1.5em;
 		}
 
 	}
@@ -85,6 +77,8 @@ body {
 		}
 		
 		.inside_about{
+			float:left;
+			margin-top: 10vh;
 			background-color: #7f8c8d;
 		}
 	}
