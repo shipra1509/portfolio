@@ -1,11 +1,11 @@
 body {
 
 	#home{
-		background-color : #16a085;
+		background-color : #ECDFBD;
 		height : 100vh;
 
 		.aboveLine{
-			color : white;
+			color : #FB6648;
 			padding-top : 20vh;
 			padding-left : 30vh;
 			font-family: 'Poiret One', cursive;
@@ -14,15 +14,15 @@ body {
 		}
 
 		.belowLine{
-			color : white;
+			color : #FB6648;
 			padding-left : 90vh;
 			font-family: 'Poiret One', cursive;
 			font-size : 4em;
 		}
 
 		.row div{
-			background-color: white;
-			color: #16a085;
+			background-color: #FB6648;
+			color: #ECDFBD;
 			text-decoration: none;
 			display: inline-block;
 			padding: 30px 35px;
@@ -30,6 +30,25 @@ body {
 			margin: 15px 5px;
 			width: 6em;
 			transition: all 0.3s ease-in;
+		}
+
+		.phrase li{
+			/* visibility: hidden; */
+			transition: scale(0);
+			transition: all 0.5s ease-in-out;
+			padding: 0 1em 0 0.8em;
+			color: #FB6648;
+			text-decoration: none;
+			font-family: 'Poiret One', cursive;
+			display: inline-block;
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+		.row div:hover .phrase li{
+			visibility:visible;
+			transition: scale(1);
+			display: block;
 		}
 
 		.row{
@@ -42,15 +61,105 @@ body {
 		}
 		
 		.row div:hover{
-			background-color: #16a085; 
-			color: white;
+			background-color: #ECDFBD; 
+			color: #FB6648;
 			font-size: 1.5em;
 		}
 
 	}
 
 	.about{
-		background-color: #bdc3c7;
+		background-color: #F0F1EE;
+		width: 100%;
+		height: 100vh;
+		h1{
+			padding-top: 5vh;
+			padding-left: 45vh;
+			font-family: left;
+			font-weight: bold;
+			color: black;
+			font-family: 'Poiret One', cursive;
+		}
+
+		p{
+      font-family: 'Stalemate', cursive;
+			text-align: center;
+			padding-top: 5vh;
+			font-size: 3em;
+			color: white;
+		}
+
+		img{
+			height: 80vh;
+			width: 50%;
+			float:right;
+			margin-right:0;
+			transition: all 0.3s ease-in;
+		}
+     
+    i{
+    	padding-left: 50vh;
+    	text-decoration: none;
+    	color: black;
+    } 
+
+    h3{
+    	padding-left: 35vh;
+    	font-family: 'Poiret One', cursive;
+    	color:#C2C2C2;
+    	visibility: hidden;
+    	transform:scale(0);
+    	transition: all 0.3s ease-in-out;
+    }
+
+    i:hover h3{
+     visibility: visible;
+     transform: scale(1);
+
+    }
+		
+		img:hover{
+			opacity: 0.5;
+		}
+
+		.image_on_hover{
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			transform:scale(0);
+			transition: all 0.3s ease-in-out;
+
+		}
+
+		.img:hover .image_on_hover{
+      visibility: visible;
+      transform: scale(1);
+      top: 0px;
+		}
+
+		
+
+		h2{
+			color: black;
+			font-family: 'Poiret One', cursive;
+			text-align: center;
+			font-weight: bold;
+			visibility: hidden;
+		}
+		
+		.inside_about{
+			float:left;
+			margin-top: 5vh;
+			height: 65vh;
+			background-color: #7f8c8d;
+		}
+	}
+
+	.skills{
+		background-color: #ECDFBD;
 		width: 100%;
 		height: 100vh;
 		h1{
@@ -60,28 +169,35 @@ body {
 			font-weight: bold;
 		}
 
-		p{
-			font-family: 'Poiret One', cursive;
-			text-align: justify;
-			padding-top: 5vh;
-		}
-
 		img{
-			height: 30%;
-			width: 30%; 
+			padding-top: 5vh;
+			height:6em;
+			width:6em;
+			margin-left: 80px;
 		}
 
-		img:hover{
-			border: 3px solid;
-			
+		h3{
+
+			font-family: 'Poiret One', cursive;
+			text-align: center;
 		}
-		
-		.inside_about{
-			float:left;
-			margin-top: 10vh;
-			background-color: #7f8c8d;
+
+		.icons{
+			background-color: white;
+			margin-right: 20px;
+			width: 25%;
+			margin-top: 20px;
+			height: 25%;
 		}
+
+		.insideSkills{
+			margin-left: 30vh;
+		}
+
+		.progress-bar{
+      background-color: #FB6648;
+		}
+   
 	}
-
 }
 
