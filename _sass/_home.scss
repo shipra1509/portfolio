@@ -1,21 +1,56 @@
+
 header{
 	height: 7vh;
 	width:100%;
 	position: fixed;
 	z-index: 100;
-	background-color: #ECDFBD;
-  opacity: 1;
+	background-color: rgba(0,0,0,0.1);
 
+	.background {
+		visibility: hidden;
+		position: absolute;
+		top: 0px;
+		left:0px; bottom: 0px;
+		right: 0px;
+		transform: scale(0);
+		transition: all 0.5s ease-out;
+		background-color: rgba(0,0,0,0.1);
+		padding-top: 2vh;
+		text-decoration: none;
+		margin-top: 0;
+		text-align: center;
+	}
+
+	.header:hover .background {
+		visibility: visible;
+		display: block;
+		transform: scale(1);
+		top:0px;
+	}
+
+	.header:hover i {
+		opacity: 0;
+	}
+
+	a i{
+		text-decoration: none;
+	}
+	
+	i{
+		text-decoration: none;
+		margin-left: 50%;
+		color: black;
+		padding-top: 2vh;
+	}
+	
 	.scrollto{
+		text-decoration: none;
 		color: black;
 		font-family: 'Poiret One', cursive;
 		padding-right: 2em;
+		transition: all 0.3s ease-in;
+		font-weight: bold;
 	}
-
-	.background{
-		margin-top: 3vh;
-		text-align: center;
-	} 
 }
 
 
