@@ -121,12 +121,16 @@ layout: home
 </div>
 </div>
 
-<div id="projects">
+<div id="projects" class="container">
+
+  <div class="inside-projects">
+   <p>A glimpse of what I've worked on.</p>  
+ </div>
 
 </div>
 
 <div id="contact" class="container">
-  
+
   <hr class="sep">
   <div class="contact-form module">
     <form id="contact_i" class="contact" method="post" action="../mailer.php">
@@ -137,18 +141,16 @@ layout: home
       <input id="name" name="name" class="sep name" placeholder="Name" type="text" />
       <input id="email" name="email" class="sep email" type="email" placeholder="Email" /><br>
       <textarea id="comments" name="comments" class="comments" placeholder="Comments" class="" ></textarea><br>
-      
+
       <button type="submit" class="button-submit">Submit</button>
 
     </form>
-           <!--  <div class="col-md-4"></div>
-           <hr class="sep col-md-4"><br> -->
-         </div>
+  </div>
 
-         <hr class="sep">
-       </div>
-<!--
-  <footer>
-    {% include footer.html %}
-  </footer>  -->
+  <hr class="sep">
+</div>
+
+<footer>
+  {% include footer.html %}
+</footer>
 
