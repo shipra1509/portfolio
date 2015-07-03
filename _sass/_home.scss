@@ -1,3 +1,24 @@
+header{
+	height: 7vh;
+	width:100%;
+	position: fixed;
+	z-index: 100;
+	background-color: #ECDFBD;
+  opacity: 1;
+
+	.scrollto{
+		color: black;
+		font-family: 'Poiret One', cursive;
+		padding-right: 2em;
+	}
+
+	.background{
+		margin-top: 3vh;
+		text-align: center;
+	} 
+}
+
+
 body {
 
 	#home{
@@ -68,7 +89,7 @@ body {
 
 	}
 
-	.about{
+	#about{
 		background-color: #F0F1EE;
 		width: 100%;
 		height: 100vh;
@@ -82,7 +103,7 @@ body {
 		}
 
 		p{
-      font-family: 'Stalemate', cursive;
+			font-family: 'Stalemate', cursive;
 			text-align: center;
 			padding-top: 5vh;
 			font-size: 3em;
@@ -96,51 +117,20 @@ body {
 			margin-right:0;
 			transition: all 0.3s ease-in;
 		}
-     
-    i{
-    	padding-left: 50vh;
-    	text-decoration: none;
-    	color: black;
-    } 
 
-    h3{
-    	padding-left: 35vh;
-    	font-family: 'Poiret One', cursive;
-    	color:#C2C2C2;
-    	visibility: hidden;
-    	transform:scale(0);
-    	transition: all 0.3s ease-in-out;
-    }
+		i{
+			padding-left: 50vh;
+			text-decoration: none;
+			color: black;
+			transition-property: transform, -webkit-transform;
+			transition-duration: .3s;
+			transition-timing-function: ease;
+			transition: all 0.3s ease-in;
+		} 
 
-    i:hover h3{
-     visibility: visible;
-     transform: scale(1);
-
-    }
-		
-		img:hover{
-			opacity: 0.5;
-		}
-
-		.image_on_hover{
-			visibility: hidden;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			transform:scale(0);
-			transition: all 0.3s ease-in-out;
-
-		}
-
-		.img:hover .image_on_hover{
-      visibility: visible;
-      transform: scale(1);
-      top: 0px;
-		}
-
-		
+		.scroll:hover{
+			opacity: 1;
+		}		
 
 		h2{
 			color: black;
@@ -149,16 +139,42 @@ body {
 			font-weight: bold;
 			visibility: hidden;
 		}
+
+		.scroll{
+			margin-top: 10vh;
+			margin-left: 25vh;
+			width: 40vh;
+			padding-left: 15vh;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		h3{
+			text-decoration: none;
+			color: white;
+			border: solid;
+			border-color: white;
+			text-align: center;
+			font-family: 'Poiret One', cursive;
+			transition: all 0.3s ease-in;
+		}
+
+		h3:hover{
+			text-decoration: none;
+			background-color: #818788;
+		}
 		
 		.inside_about{
 			float:left;
 			margin-top: 5vh;
 			height: 65vh;
-			background-color: #7f8c8d;
+			background-color: #3C4344;
 		}
 	}
 
-	.skills{
+	#skills{
 		background-color: #ECDFBD;
 		width: 100%;
 		height: 100vh;
@@ -195,9 +211,113 @@ body {
 		}
 
 		.progress-bar{
-      background-color: #FB6648;
+			background-color: #FB6648;
 		}
-   
+
 	}
+
+	#projects{
+		background-color: #E0AF00;
+		height: 100vh;
+		width:100%;
+	}
+
+	#contact{
+		background-color: #515151;
+		height: 100vh;
+		width:100%;
+
+		.sep{
+			width: 50vh;
+			margin-top: 10vh;
+		}
+
+		h2{
+			font-family: 'Poiret One', cursive;
+			color: white;
+			margin-left: 80vh;
+			margin-top: 7vh;
+		}
+
+		
+		.name{
+			margin-top: 7vh;
+			margin-left: 55vh;
+			width: 40vh;
+			height:7vh;
+			color: white;
+			font-family: 'Poiret One', cursive;
+			border: 1px solid #6d6256;
+		}
+
+		.email{
+			margin-left: 3vh;
+			margin-top: 7vh;
+			width: 40vh;
+			height:7vh;
+			color: white;
+			font-family: 'Poiret One', cursive;
+			border: 1px solid #6d6256;
+		}
+
+		.comments{
+			margin-left: 55vh;
+			margin-top: 3vh;
+			width: 84vh;
+			height:30vh;
+			color: white;
+			font-family: 'Poiret One', cursive;
+			border: 1px solid #6d6256;
+		}
+
+
+		#contact_i  ::-webkit-input-placeholder {
+			font-family: 'Poiret One', cursive;
+			color:white;
+			font-size: 1.2em;
+		}
+
+
+#contact_i :-moz-placeholder { /* Firefox 18- */
+	font-family: 'Poiret One', cursive;
+	color:white;
+	font-size: 1.2em;
+}
+
+#contact_i ::-moz-placeholder {  /* Firefox 19+ */
+	font-family: 'Poiret One', cursive;
+	color:white; 
+	font-size: 1.2em;
+}
+
+#contact_i :-ms-input-placeholder {  
+	font-family: 'Poiret One', cursive;
+	color:white;
+	font-size: 1.2em; 
+}
+
+input{
+	background-color: rgba(0,0,0,0.4);
+}
+
+textarea{
+	background-color: rgba(0,0,0,0.4);
+}
+
+button{
+	color: #fff;
+	font-family: 'Poiret One', cursive;
+	border: 1px solid #6d6256;
+	background-color: rgba(0,0,0,0.4);
+	font-size: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-left: 85vh;
+	margin-top: 5vh;
+	height: 5vh;
+	width: 25vh;
+}
+
+}
 }
 
