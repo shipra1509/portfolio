@@ -6,6 +6,7 @@ layout: home
   {% include header.html %}
 </header> 
 
+<!--HOME-->
 <div id="home">
   <div class="container">  
     <h1 class="aboveLine">Shipra Sinha</h1>
@@ -29,11 +30,11 @@ layout: home
         <li>Contact</li>
       </ul>
     </div>
-
-
   </div>
 </div> 
+<!--HOME end-->
 
+<!--ABOUT-->
 <div id="about" class="container-fluid">
   <div>
     <h1>About</h1>
@@ -45,16 +46,17 @@ layout: home
     </div>
   </div>
   <div class="col-md-5">
-    <img src="../images/shipra.jpg">
+    <img src="../images/shipra.png">
   </div> 
 </div>
+<!--ABOUT ends-->
 
+<!--SKILLS-->
 <div id="skills" class="container">
   <h1>Skills</h1>
   <div class="insideSkills">
-
    <div class="icons col-md-4">
-     <img src="../images/HTML5.png">
+     <img src="../images/html.png">
      <h3>HTML5</h3>
      <div class = "progress-mark">
       <div class = "progress">
@@ -87,7 +89,7 @@ layout: home
 </div>
 
 <div class="icons col-md-4">
- <img src="../images/js.png">
+ <img src="../images/js.jpg">
  <h3>JavaScript &amp; JQuery</h3>
  <div class = "progress-mark">
   <div class = "progress">
@@ -120,9 +122,10 @@ layout: home
 </div>
 </div>
 </div>
+<!--SKILLS ends-->
 
+<!--PROJECTS-->
 <div id="projects" class="container">
-
   <div class="inside-projects">
    <p class="top">A glimpse of what I've worked on</p>  
  </div>
@@ -133,36 +136,33 @@ layout: home
  </div>
 
  <div class="description col-md-8">
- <h3>PSD to HTML</h3>
+ <h3>Photoshop Document to HTML</h3>
    <p class="bottom">In a PSD to HTML workflow, the Photoshop document represents the final site and it’s expected to look exactly the same in the browser. Photoshop is awesome for editing and exporting photographs for web usage. There’s also plenty of situations where it still might make sense to generate full detail mockups (in Photoshop, Illustrator, or otherwise) as part of a more complete process.</p>
-   <a href="https://github.com/shipra1509/PSD" target="_blank" class="demo">Demo</a>
-   <a href="https://psd-shipra1509.c9.io/?_c9_id=livepreview0&_c9_host=https://ide.c9.io" target="_blank" class="github">Github</a>
+   <a href="https://psd-shipra1509.c9.io/?_c9_id=livepreview0&_c9_host=https://ide.c9.io" target="_blank" class="demo">Demo</a>
+   <a href="https://github.com/shipra1509/PSD" target="_blank" class="github">Github</a>
  </div>
  <hr>
  </section>
-
 </div>
+<!--PROJECTS ends-->
 
+
+<!--CONTACT-->
 <div id="contact" class="container">
-
   <hr class="sep">
   <div class="contact-form module">
     <form id="contact_i" class="contact" method="post" action="../mailer.php">
-
       <h2>GET IN TOUCH</h2>
-
       <div id="form-messages"></div>
       <input id="name" name="name" class="sep name" placeholder="Name" type="text" />
       <input id="email" name="email" class="sep email" type="email" placeholder="Email" /><br>
       <textarea id="comments" name="comments" class="comments" placeholder="Comments" class="" ></textarea><br>
-
       <button type="submit" class="button-submit">Submit</button>
-
     </form>
   </div>
-
   <hr class="sep">
 </div>
+<!--CONTACT ends-->
 
 <footer>
   {% include footer.html %}
